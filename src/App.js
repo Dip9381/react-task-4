@@ -36,7 +36,7 @@ function App() {
         <th>company</th>
       </tr>
       {
-        data.map((val)=>{
+       data.length!==0? data.map((val)=>{
           return(
             <>
             <tr>
@@ -60,7 +60,7 @@ function App() {
             </tr>
             </>
           );
-        })
+        }):<></>
       }
     </table>
     </>
